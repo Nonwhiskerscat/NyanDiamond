@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.no {
+  display: none;
+}
+
+.on {
+  display: inline;
+}
+
+.bighead {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.bighead::before {
+  content: "";
+  background: url(../img/back/background.png);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+html, body {
+  color: #333333;
+  font-family: 'Josefin Slab';
+}
+
+table, th, tr, td {
+  border: none;
+  border-collapse: collapse;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+input, button {
+  outline: none;
+}

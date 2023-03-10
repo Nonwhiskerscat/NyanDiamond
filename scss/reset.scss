@@ -1,0 +1,79 @@
+@import "./style.scss";
+@import "./responsive.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+
+}
+
+.no {
+    display: none;
+}
+
+.on {
+    display: inline;
+}
+
+
+.bighead {
+    // display: flex;
+    // align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-height: 100vh;
+
+    &::before{
+        content: "";
+        background: url(../img/back/background.png);
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+    }
+}
+
+html, body {
+    color: #333333;
+    font-family: 'Josefin Slab';
+}
+
+table, th,  tr, td {
+    border: none;
+    border-collapse: collapse;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+input, button {
+    outline: none;
+}
+
+// .container {
+//     // background-color: red;
+//     position: relative;
+//     width: 90%;
+//     margin: 0 auto;
+//     // background-color: royalblue;
+
+//     @include responsive(semi-cat) {
+//         width: 93.75%;
+//         // background-color: fuchsia;
+//     }
+
+//     @include responsive(pc-cat) {
+//         // background-color: darkorange;
+//         max-width: 1180px;
+//     }
+// }
+
+
