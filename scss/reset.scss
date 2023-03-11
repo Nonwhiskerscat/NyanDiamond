@@ -38,6 +38,25 @@ body {
         left: 0px;
         z-index: -1;
     }
+
+    .nyan_zone {
+        margin: 0 auto;
+        position: relative;
+        width: 95%;
+        background-color: tan;
+        min-height: 100vh;
+        
+        @include responsive(tablet-cat) {
+            width: 96.35416666666667%; // 75*8 사이 여백 20, 양끝 여백 14
+            background-color: lavender;
+        }
+        
+        @include responsive(pc-cat) {
+            width: 100%;
+            max-width: 1180px;
+            background-color: darkviolet;
+        }   
+    }
 }
 
 html, body {

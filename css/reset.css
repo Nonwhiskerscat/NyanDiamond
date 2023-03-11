@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/*=================중단점=================*/
+/*=================중단점=================*/
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +30,29 @@
   top: 0px;
   left: 0px;
   z-index: -1;
+}
+
+.bighead .nyan_zone {
+  margin: 0 auto;
+  position: relative;
+  width: 95%;
+  background-color: tan;
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .bighead .nyan_zone {
+    width: 96.35416666666667%;
+    background-color: lavender;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .bighead .nyan_zone {
+    width: 100%;
+    max-width: 1180px;
+    background-color: darkviolet;
+  }
 }
 
 html, body {

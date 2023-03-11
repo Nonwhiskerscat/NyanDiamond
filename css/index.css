@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Josefin Slab';
   font-style: normal;
@@ -67,6 +68,8 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/*=================중단점=================*/
+/*=================중단점=================*/
 * {
   margin: 0;
   padding: 0;
@@ -95,9 +98,21 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  right: 0px;
-  bottom: 0px;
   z-index: -1;
+}
+
+.bighead .nyan_zone {
+  margin: 0 auto;
+  position: relative;
+  width: 95%;
+  background-color: tan;
+}
+
+@media screen and (min-width: 768px) {
+  .bighead .nyan_zone {
+    width: 96.35416666666667%;
+    background-color: lavender;
+  }
 }
 
 html, body {
